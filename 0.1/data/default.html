@@ -1,0 +1,36 @@
+<h3>Data</h3>
+
+<table ng-show="monarchs.length>0" class="table table-striped" ng-style="{true: { 'white-space': 'nowrap' }}[!wrap]">
+  <thead>
+    <tr>
+      <th class="th-left">
+        <span class="sort" ng-click="sort('monarch')">Monarch</span>
+      </th>
+      <th class="th-left">
+        <span class="sort" ng-click="sort('from')">From</span>
+      </th>
+      <th class="th-left">
+        <span class="sort" ng-click="sort('to')">To</span>
+      </th>
+      <th class="th-left">
+        <span class="sort" ng-click="sort('durationInYears')">Years</span>
+      </th>
+      <th class="th-left">
+        <span class="sort" ng-click="sort('house')">House</span>
+      </th>
+      <th class="th-left">
+        <span class="sort" ng-click="sort('monarch')">Question Level</span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="m in monarchs">
+      <td>{{m.monarch}}</td>
+      <td>{{m.from}}</td>
+      <td>{{m.to}}</td>
+      <td>{{m.durationInYears}}</td>
+      <td>{{m.house}}</td>
+      <td>{{m.questionLevel}}</td>
+    </tr>
+  </tbody>
+</table>

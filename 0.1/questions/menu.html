@@ -1,0 +1,21 @@
+<button class="btn btn-primary">Questions</button>
+
+<h5 style="margin-top: 30px;">Settings</h5>
+<div class="filter">
+  <span>Question level</span>
+  <select ng-model="settings.val.minQuestionLevel" ng-options="x for x in settings.questionLevels" style="width: 50px; display: inline;"></select>
+  <span style="display: inline;">-</span>
+  <select ng-model="settings.val.maxQuestionLevel" ng-options="x for x in settings.questionLevels" style="width: 50px; display: inline;"></select>
+</div>
+
+<div class="filter">
+  <span>Options level</span>
+  <select ng-model="settings.val.minOptionsLevel" ng-options="x for x in settings.optionLevels" style="width: 50px; display: inline;"></select>
+  <span style="display: inline;">-</span>
+  <select ng-model="settings.val.maxOptionsLevel" ng-options="x for x in settings.optionLevels" style="width: 50px; display: inline;"></select>
+</div>
+
+<div class="filter">
+  <span>Options display</span>
+  <select ng-model="settings.val.optionDisplay" ng-options="x.text for x in settings.optionDisplays"></select>
+</div>

@@ -1,0 +1,56 @@
+/* page */
+body { padding: 60px 0 40px 0; }
+
+/* top menu */
+@media (max-width: 979px) {
+  body { padding: 0 0 40px 0; }
+  .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner { padding: 0; }
+  .navbar-text.pull-right {
+    float: none;
+    padding: 0 5px;
+    margin: 0; 
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top { margin: 0; }
+}
+
+/* left menu */
+.left { max-width: 260px; }
+.left button { width: 240px; display: block; margin-bottom: 8px; }
+.search { margin: 20px 0 10px 0; }
+.search .input-append input { width: 199px; }
+.filter span { font-size: 11px; font-weight: bold; display: block; }
+.filter select { width: 240px; margin-bottom: 5px; }
+.input span { font-size: 11px; font-weight: bold; display: block; }
+.input input { width: 225px; margin-bottom: 5px; }
+.icon-remove { position: relative; color: gray; margin-left: -45px; cursor: pointer; z-index: 2; }
+
+/* main */
+.option { padding: 10px; display: inline; }
+
+  .question-top div { float: left; width: 70px; text-align: center; }
+  .question-top .clickable { cursor: pointer; }
+  .question-top .clickable:hover { text-decoration: underline; }
+
+  /* table */
+  .table { margin-bottom: 0; width: auto; }
+  .table .sort { cursor: pointer; }
+  .table .sort:hover { text-decoration: underline; }
+  /* tr */
+  .table .tr-processing { background-color: gray !important; }
+  .table .tr-odd { background-color: #f9f9f9; }
+  .tr-narrow, .tr-narrow td, .tr-narrow [class*="span"] { line-height: 16px; min-height: 16px; }
+  /* th and td */
+  .table-nowrap th, .table-nowrap td { white-space: nowrap }
+  /* th */
+  .table thead th { font-size: 14px; vertical-align: middle; }
+  .table .th-left { text-align: left; padding: 3px 8px 3px 0; }
+  .table .th-center { text-align: center; padding: 3px 4px 3px 4px; }
+  .table .th-compact { color: silver; margin-left: -10px; cursor: pointer; }
+  .table .th-compact:hover { color: SlateGray; }
+  /* td */
+  .table td { padding: 2px; font-size: 12px; }
+  .table .td-center { text-align: center; }
+  .table .td-left { text-align: left; }

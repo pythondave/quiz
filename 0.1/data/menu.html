@@ -1,0 +1,8 @@
+<button class="btn btn-primary">Data</button>
+
+<div class="filter" ng-init="minQuestionLevel=1; maxQuestionLevel=5;">
+  <span>Question Level</span>
+  <select ng-model="minQuestionLevel" ng-options="x for x in questionLevels" style="width: 50px; display: inline;"></select>
+  <span style="display: inline;">-</span>
+  <select ng-model="maxQuestionLevel" ng-options="x for x in questionLevels" style="width: 50px; display: inline;"></select>
+</div>

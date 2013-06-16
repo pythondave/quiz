@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  
+<head>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css">
+  <style>
+    body { margin: 30px; }
+    .table { width: 300px; }
+    td, th { white-space: nowrap }
+  </style>
+</head>
+
+<body ng-controller="KeyboardEventCtrl" keyboard-event>
+  <h3>Quiz dashboard</h3>
+
+  <h4>Prototypes</h4>
+  <table class="table table-hover table-striped">
+    <thead>
+      <tr>
+        <th>Update</th>
+        <th>Date</th>
+        <th>API</th>
+        <th>Demo</th>
+        <th>Code</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0.1</td>
+        <td>16 Jun 2013</td>
+        <td><a href="/quiz/0.1/server/api/default.html">0.1</a></td>
+        <td><a href="/quiz/0.1/default.html#/questions">0.1</a></td>
+        <td><a href="//github.com/pythondave/quiz/tree/gh-pages/0.1">0.1</a></td>
+        <td>End of phase 2</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>

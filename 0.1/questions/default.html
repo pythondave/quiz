@@ -1,0 +1,35 @@
+<h3 style="float: left">Question</h3>
+
+<div ng-show="question">
+
+  <div class="question-top" style="float: left; position: inline; color: silver; margin: 8px 0 0 35px; vertical-align: top;">
+    <div>Question level {{question.questionLevel}}</div>
+    <div>Options level {{question.optionsLevel}}</div>
+    <div class="clickable" ng-click="displayOptions=!displayOptions">
+      {{ { true: 'Hide options', false: 'Show options' }[displayOptions] }}
+    </div>
+    <button class="btn btn-info" style="float: left; margin: 5px 0 0 40px;" ng-click="getQuestion()">
+      <span>Ask another >></span>
+    </button>
+  </div>
+
+  <div style="clear: both; padding: 20px 0 10px 0;">{{question.question}}</div>
+
+  <div style="margin: 10px 0 15px 0;" ng-show="displayOptions">
+    <span ng-repeat="o in question.options" style="margin: 10px;">
+      <button class="btn option" ng-class="getClass(o)" ng-click="setAnswered(o)" >{{o}}</button>
+    </span>
+  </div>
+
+  <div ng-show="answered">
+    <div ng-show="answered==question.answer">Correct!</div>
+    <div ng-show="answered!=question.answer">Wrong!</div>
+    <div style="margin: 20px 0;">{{question.info}}</div>
+    <h5>External info</h5>
+    <div style="margin: 0 0;">
+      <a class="btn btn-info" target="_blank" href="http://www.google.com/search?q={{question.search}}">Google</a>
+      <a class="btn btn-info" target="_blank" href="http://www.google.com/search?q=site:wikipedia.org {{question.search}}">Wikipedia</a>
+      <a class="btn btn-info" target="_blank" href="http://en.wikipedia.org/wiki/List_of_state_leaders_in_{{question.answer}}#Europe">Wikipedia - state leaders</a>
+  </div>
+
+</div>
